@@ -1,5 +1,5 @@
 .titulos{
-    padding-bottom: 8vh;
+    padding-bottom: 3vh;
 }
 
 .titulos  h1{
@@ -25,20 +25,22 @@
 
 body {
     background-color: blanchedalmond;
-    margin-top: 50px;
+    margin-top: 0px;
     margin-right:40vh;
     margin-left: 40vh;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .general {
     border: 2px solid beige;
     background-image: linear-gradient(rgba(11, 129, 11, 0.733)), url(imglanding/tiendabarrio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: auto;
     width: 100%;
     max-width: 110vh;
     max-height: 100%;
-    height: 80vh;
+    height: 100vh;
     padding: 20px;
     align-items: center;
     align-content: center;
@@ -47,37 +49,25 @@ body {
     overflow-wrap: break-word;
     overflow: hidden;
     word-wrap: break-word;
+    position: fixed;
 }
 
 .form{
-    font-size: 25px;
+    font-size: 23px;
     text-align: left;
     margin-bottom: 0;
     color: blanchedalmond;
     padding-bottom: 5px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    color: blanchedalmond;
-    margin-right: 55vh;
-    border: 2px solid;
-    padding: 8px;
-    margin-top: 0;
-    padding-right: 20px;
-    border-radius: 20px;
-    margin-bottom: 30vh;
-}
-
 button{
-    border: green solid;
+    border: green solid 2px;
     margin: 8px 10vh;
     padding: 5px;
     border-radius: 20px;
     background-color: blanchedalmond;
     color: green;
-    box-shadow: 3px 5px 10px blanchedalmond;
+    box-shadow: 3px 5px 20px blanchedalmond;
     cursor: pointer;
 }
 
@@ -90,3 +80,172 @@ input {
     padding-left: 10px;
 }
 
+
+nav{
+    background-color: rgba(30, 196, 30, 0.519);
+    margin: 0;
+    padding: 5px;
+    border-radius: 20px;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav a{
+    color: blanchedalmond;
+    margin: 5px 8px;
+    text-decoration: none;
+    padding-left: 47px;
+    font-size: 15px;
+}
+
+.redes {
+    background-color: rgba(255, 235, 205, 0.625);
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+.redes p{
+    color: rgb(4, 110, 4);
+}
+
+.redes img{
+    padding-top: 5px;
+    height: 35px;
+    width: 35px;
+    filter: sepia(1) saturate(10000%) hue-rotate(90deg);
+}
+
+
+.contenedor1y2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section .two{
+    border: 2px solid color blanchedalmond;
+    flex-grow: 2;
+    border: 2px solid blanchedalmond;
+    border-radius: 20px;
+}
+
+section .one{
+    flex-grow: 1;
+}
+
+form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;  
+    color: blanchedalmond;
+    border: 2px solid;
+    padding: 8px;
+    margin-top: 0;
+    padding-right: 20px;
+    border-radius: 20px;
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    body {
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+
+    .titulos h1 {
+        font-size: 50px;
+    }
+
+    .titulos p {
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+    }
+
+    p{
+        display: flex;
+        justify-content: center;
+    }
+    .general {
+        height: auto;
+        position: static;
+        padding: 10px;
+    }
+
+    .contenedor1y2 {
+        flex-direction: column;
+        margin-left: 5vh;
+        margin-right: 5vh;
+    }
+
+    button {
+        margin: 8px auto;
+        width: 80%;
+    }
+
+    nav {
+        padding-left: 14px;
+        align-items: center;
+    }
+
+    nav a {
+        padding-left: 0;
+        font-size: 14px;
+    }
+}
+
+.two,
+.one{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 400px) {
+    *{
+        font-family: cursive;
+    }
+
+    .titulos{
+        padding-bottom: 1vh;
+    }
+
+    .titulos h1 {
+        color: white;
+        font-size: 25px;
+    }
+
+    .titulos p{
+        color: white;
+        font-size: 20px;
+    }
+
+    body{
+        background-color: black;
+    }
+
+    .general{
+        background-image: linear-gradient(rgba(6, 6, 6, 0.721)), url(imglanding/tiendabarrio.jpg);
+        box-shadow: 2px 3px 10px 8px white;
+    }
+
+    form{
+        padding-right: 0;
+        font-size: 10px;
+    }
+
+    nav{
+        background-color: rgba(211, 203, 203, 0.748);
+        padding: 1px 5px 3px 2px;
+    }
+
+    nav a{
+        color: black;
+        font-size:6px;
+        margin: 0;
+        padding-left: 2.5vh;
+    }
+}
