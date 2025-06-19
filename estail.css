@@ -1,251 +1,211 @@
-.titulos{
-    padding-bottom: 3vh;
-}
-
-.titulos  h1{
-    color: blanchedalmond;
-    text-align: center;
-    margin-top: 0;
-    padding-top: 0;
-    font-size: 70px;
-}
-
-.titulos p{
-    color: blanchedalmond;
-    text-align: center;
-    font-size: 30px;
-}
-
-*{
-    font-family: fantasy;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+font-family: fantasy;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body {
-    background-color: blanchedalmond;
-    margin-top: 0px;
-    margin-right:40vh;
-    margin-left: 40vh;
-    margin-bottom: 0px;
+background-color: blanchedalmond;
+margin: 0 auto;
+max-width: 1200px;
+padding: 0 20px;
 }
 
 .general {
-    border: 2px solid beige;
-    background-image: linear-gradient(rgba(11, 129, 11, 0.733)), url(imglanding/tiendabarrio.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
-    width: 100%;
-    max-width: 110vh;
-    max-height: 100%;
-    height: 100vh;
-    padding: 20px;
-    align-items: center;
-    align-content: center;
-    box-shadow: 6px 7px 20px green;
-    border-radius: 20px;
-    overflow-wrap: break-word;
-    overflow: hidden;
-    word-wrap: break-word;
-    position: fixed;
+border: 2px solid beige;
+background-image: linear-gradient(rgba(11, 129, 11, 0.733)), url(imglanding/tiendabarrio.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 20px;
+box-shadow: 6px 7px 20px green;
+padding: 20px;
+overflow: hidden;
 }
 
-.form{
-    font-size: 23px;
-    text-align: left;
-    margin-bottom: 0;
-    color: blanchedalmond;
-    padding-bottom: 5px;
+nav {
+background-color: rgba(30, 196, 30, 0.519);
+padding: 10px;
+border-radius: 20px;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+justify-content: center;
 }
 
-button{
-    border: green solid 2px;
-    margin: 8px 10vh;
-    padding: 5px;
-    border-radius: 20px;
-    background-color: blanchedalmond;
-    color: green;
-    box-shadow: 3px 5px 20px blanchedalmond;
-    cursor: pointer;
+nav a {
+color: blanchedalmond;
+text-decoration: none;
+padding: 8px 16px;
+font-size: 14px;
+border-radius: 10px;
+transition: background 0.3s;
 }
 
-label{
-    padding-bottom: 3px;
+nav a:hover {
+background-color: rgba(255, 255, 255, 0.2);
 }
 
-input {
-    border-radius: 20px;
-    padding-left: 10px;
+.titulos {
+padding: 20px 0;
+text-align: center;
 }
 
-
-nav{
-    background-color: rgba(30, 196, 30, 0.519);
-    margin: 0;
-    padding: 5px;
-    border-radius: 20px;
-    align-items: center;
-    align-content: center;
-    display: flex;
-    justify-content: flex-start;
+.titulos h1 {
+color: blanchedalmond;
+font-size: 60px;
 }
 
-nav a{
-    color: blanchedalmond;
-    margin: 5px 8px;
-    text-decoration: none;
-    padding-left: 47px;
-    font-size: 15px;
+.titulos p {
+color: blanchedalmond;
+font-size: 26px;
 }
 
-.redes {
-    background-color: rgba(255, 235, 205, 0.625);
-    padding: 10px;
-    margin-top: 15px;
-    border-radius: 20px;
+.form {
+font-size: 22px;
+color: blanchedalmond;
+text-align: center;
+margin: 10px 0;
 }
-
-.redes p{
-    color: rgb(4, 110, 4);
-}
-
-.redes img{
-    padding-top: 5px;
-    height: 35px;
-    width: 35px;
-    filter: sepia(1) saturate(10000%) hue-rotate(90deg);
-}
-
 
 .contenedor1y2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: space-between;
 }
 
-section .two{
-    border: 2px solid color blanchedalmond;
-    flex-grow: 2;
-    border: 2px solid blanchedalmond;
-    border-radius: 20px;
-}
-
-section .one{
-    flex-grow: 1;
+.one, .two {
+flex: 1 1 300px;
+display: flex;
+justify-content: center;
 }
 
 form {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;  
-    color: blanchedalmond;
-    border: 2px solid;
-    padding: 8px;
-    margin-top: 0;
-    padding-right: 20px;
-    border-radius: 20px;
-    flex-grow: 1;
+display: flex;
+flex-direction: column;
+gap: 10px;
+color: blanchedalmond;
+border: 2px solid blanchedalmond;
+padding: 16px;
+border-radius: 20px;
+width: 100%;
+max-width: 400px;
 }
 
-@media screen and (max-width: 1024px) and (min-width: 600px) {
-    body {
-        margin-left: 5vh;
-        margin-right: 5vh;
-    }
-
-    .titulos h1 {
-        font-size: 50px;
-    }
-
-    .titulos p {
-        font-size: 22px;
-        display: flex;
-        justify-content: center;
-    }
-
-    p{
-        display: flex;
-        justify-content: center;
-    }
-    .general {
-        height: auto;
-        position: static;
-        padding: 10px;
-    }
-
-    .contenedor1y2 {
-        flex-direction: column;
-        margin-left: 5vh;
-        margin-right: 5vh;
-    }
-
-    button {
-        margin: 8px auto;
-        width: 80%;
-    }
-
-    nav {
-        padding-left: 14px;
-        align-items: center;
-    }
-
-    nav a {
-        padding-left: 0;
-        font-size: 14px;
-    }
+label {
+font-size: 18px;
 }
 
-.two,
-.one{
-    display: flex;
-    justify-content: center;
+input {
+border-radius: 20px;
+padding: 8px 10px;
+border: none;
 }
 
-@media (max-width: 400px) {
-    *{
-        font-family: cursive;
-    }
+button {
+border: 2px solid green;
+background-color: blanchedalmond;
+color: green;
+border-radius: 20px;
+padding: 5px;
+cursor: pointer;
+box-shadow: 3px 5px 20px blanchedalmond;
+margin-top: 10px;
+margin-right: 10vh;
+margin-left: 10vh;
+font-weight: bold;
+font-size: 20px;
+}
 
-    .titulos{
-        padding-bottom: 1vh;
-    }
+.uno button {
+border: 2px solid green;
+background-color: white;
+color: green;
+padding: 10px 20px;
+border-radius: 20px;
+cursor: pointer;
+}
 
-    .titulos h1 {
-        color: white;
-        font-size: 25px;
-    }
+.redes {
+background-color: rgba(255, 235, 205, 0.625);
+padding: 10px;
+margin-top: 20px;
+border-radius: 20px;
+text-align: center;
+}
 
-    .titulos p{
-        color: white;
-        font-size: 20px;
-    }
+.redes p {
+color: rgb(4, 110, 4);
+margin-bottom: 10px;
+}
 
-    body{
-        background-color: black;
-    }
+.redes img {
+height: 35px;
+width: 35px;
+margin: 0 5px;
+filter: sepia(1) saturate(10000%) hue-rotate(90deg);
+}
 
-    .general{
-        background-image: linear-gradient(rgba(6, 6, 6, 0.721)), url(imglanding/tiendabarrio.jpg);
-        box-shadow: 2px 3px 10px 8px white;
-    }
+@media screen and (max-width: 1024px) {
+.titulos h1 {
+    font-size: 45px;
+}
 
-    form{
-        padding-right: 0;
-        font-size: 10px;
-    }
+.titulos p {
+    font-size: 20px;
+}
 
-    nav{
-        background-color: rgba(211, 203, 203, 0.748);
-        padding: 1px 5px 3px 2px;
-    }
+nav {
+    flex-direction: column;
+    align-items: center;
+}
 
-    nav a{
-        color: black;
-        font-size:6px;
-        margin: 0;
-        padding-left: 2.5vh;
-    }
+.contenedor1y2 {
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 400px) {
+  * {
+    font-family: cursive;
+}
+
+body {
+    background-color: black;
+}
+
+.general {
+    background-image: linear-gradient(rgba(6, 6, 6, 0.721)), url(imglanding/tiendabarrio.jpg);
+    box-shadow: 2px 3px 10px 8px white;
+}
+
+.titulos h1 {
+    color: white;
+    font-size: 25px;
+}
+
+.titulos p {
+    color: white;
+    font-size: 18px;
+}
+
+form {
+    font-size: 12px;
+    padding: 10px;
+}
+
+nav {
+    background-color: rgba(211, 203, 203, 0.748);
+}
+
+nav a {
+    color: black;
+    font-size: 10px;
+}
 }
